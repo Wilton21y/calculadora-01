@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>calc</title>
+
+  <!-- HTML -->
+
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <h1>01</h1>
+  <div class="conteiner">
+    <div class="calculadora">
+    <h2>calcuadora</h2>
+    <div class="disp">
+      <p id="res"></p>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <button type="submit" onclick="limpar()">C</button>
+          </td>
+        <td>
+          <button type="submit" onclick="del()">del</button>
+          </td>
+        <td>
+          <button type="submit" onclick="imseri('/')">/</button>
+          </td>
+        <td><button type="submit" onclick="imseri('*')">×</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="submit" onclick="imseri('7')">7</button></td>
+        <td><button type="submit" onclick="imseri('8')">8</button></td>
+        <td><button type="submit" onclick="imseri('9')">9</button></td>
+        <td><button type="submit" onclick="imseri('-')">-</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="submit"onclick="imseri('4')">4</button></td>
+        <td><button type="submit" onclick="imseri('5')">5</button></td>
+        <td><button type="submit" onclick="imseri('6')">6</button></td>
+        <td>
+          <button type="submit" onclick="imseri('+')">+</button></td>
+      </tr>
+
+      <tr>
+        <td><button type="submit" onclick="imseri('1')">1</button></td>
+        <td><button type="submit" onclick="imseri('2')">2</button></td>
+        <td><button type="submit" onclick="imseri('3')">3</button></td>
+        <td rowspan="2">
+          <button type="submit" onclick="cal()" style="height: 100px"> = </button>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><button type="submit" onclick="imseri('0')" style="width: 100px">0</button></td>
+        <td><button type="submit" onclick="imseri('.')">.</button></td>
+      </tr>
+
+    </table>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
